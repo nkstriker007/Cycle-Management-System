@@ -1,12 +1,15 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:basics_firebase/core/controller/login_sign_up_controller.dart';
 import 'package:basics_firebase/core/service/user_service.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:basics_firebase/bar%20graph/bar_graph.dart';
-
 import '../../core/constant/app_route.dart';
+
+
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({super.key});
@@ -35,6 +38,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Get.find<LoginSignUpController>();
   final UserService _userService = UserService();
   static const primaryColor = Color(0xFF142477);
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
+
 
   @override
   void dispose() {
@@ -42,8 +48,48 @@ class _MyHomePageState extends State<MyHomePage> {
     super.dispose();
   }
   static const IconData route = IconData(0xf0561, fontFamily: 'MaterialIcons');
+
   @override
   Widget build(BuildContext context) {
+    User? user = _auth.currentUser;
+    String image ='';
+
+    if(user!= null){print("User: $user");
+    print("Display Name: ${user?.displayName}");
+    print("Email: ${user?.email}");
+    print("photo: ${user?.photoURL}");
+    print("uid: ${user?.uid}");}
+
+    Future<void> getSingleDocument() async {
+      try {
+        print("hellopew");
+        // Get a reference to the Firestore collection
+        CollectionReference collection = FirebaseFirestore.instance.collection('users');
+
+        // Get a reference to the specific document using its document ID
+        DocumentSnapshot document = await collection.doc(user!.uid).get();
+        print("hellopew");
+        // Check if the document exists
+        if (document.exists) {
+          print("hellopew1");
+          // Access the data in the document
+          Map<String, dynamic> data = document.data() as Map<String, dynamic>;
+          print(data);
+
+          // You can access fields in the document like this:
+          image = data['photoURL'];
+          // ... and so on
+          print("donr");
+
+          print('Data from the document: $image');
+        } else {
+          print('Document does not exist');
+        }
+      } catch (e) {
+        print('Error getting document: $e');
+      }
+    }
+    getSingleDocument();
     return Scaffold(
       appBar: AppBar(
         title: Text("Home"),
@@ -59,11 +105,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: BoxDecoration(
                   color: Color(0xFF142477),
                 ),
-                accountName: Text('Saikrishnan R ',style:
+                accountName: Text( user!.displayName ?? "default" ,style:
                 TextStyle(
                   fontSize: 20,
                 ),),
-                accountEmail: Text("saikrish050903@gmail.com",style:
+                accountEmail: Text(user!.email ?? "default",style:
                 TextStyle(
                   fontSize: 15,
                 ),)),
@@ -130,16 +176,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 const SizedBox(height: 50),
                 ListTile(
                   contentPadding: const EdgeInsets.symmetric(horizontal: 30),
-                  title: Text('Hello SaiKrishnan R', style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                  title: Text('Hello ${user.displayName}', style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       color: Colors.white
                   )),
-                  subtitle: Text('Good Morning', style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  subtitle: Text('Pedal on!', style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       color: Colors.white
                   )),
-                  trailing: const CircleAvatar(
+                  trailing: CircleAvatar(
                     radius: 30,
-                    backgroundImage: AssetImage('assets/images/profilepic.jpg'),
-                  ),
+                    backgroundColor: Colors.transparent, // Make sure to set a transparent background
+                    backgroundImage: NetworkImage(image), // Use NetworkImage for dynamic image URLs or AssetImage for a default image
+                  )
+
                 ),
                 const SizedBox(height: 30)
               ],

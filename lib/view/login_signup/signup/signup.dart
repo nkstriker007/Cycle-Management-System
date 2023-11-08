@@ -2,6 +2,7 @@
 
 import 'dart:io';
 
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
@@ -33,6 +34,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   final picker = ImagePicker();
   bool showPassword = false;
   bool _isLoading = false;
+  // String imageUrl='';
 
   void _handleSignUp() async {
     if (pickedImage == null) {
@@ -47,6 +49,22 @@ class _SignUpScreenState extends State<SignUpScreen> {
       final email = emailController.text.trim();
       final password = passwordController.text.trim();
       final photoURL = pickedImage!.path;
+      // print("hello");
+      // print('$photoURL');
+
+      // String uniqueFileName=DateTime.now().millisecondsSinceEpoch.toString();
+      //
+      // Reference referenceRoot=FirebaseStorage.instance.ref();
+      // Reference referenceDirImages=referenceRoot.child("images");
+      // Reference referenceImageToUpload = referenceDirImages.child(uniqueFileName);
+
+            // try {
+            //   await referenceImageToUpload.putFile(File(photoURL));
+            //   imageUrl = await referenceImageToUpload.getDownloadURL();
+            // }
+            // catch(error){
+            //
+            // }
 
       setState(() {
         _isLoading = true;
