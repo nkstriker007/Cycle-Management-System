@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.homeScreen: (context) => HomeScreen(),
         AppRoutes.signUpScreen: (context) => const SignUpScreen(),
         AppRoutes.splashScreen: (context) => const SplashScreen(),
-        '/settings':(context)=> const SettingsScreen(),
+        '/settings':(context)=> SettingsScreen(),
         '/current':(context)=> HomePage(),
       },
       initialRoute: AppRoutes.splashScreen,
