@@ -182,10 +182,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   subtitle: Text('Pedal on!', style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       color: Colors.white
                   )),
-                  trailing: CircleAvatar(
-                    radius: 30,
-                    backgroundColor: Colors.transparent, // Make sure to set a transparent background
-                    backgroundImage: NetworkImage(image), // Use NetworkImage for dynamic image URLs or AssetImage for a default image
+                  trailing: FutureBuilder(
+                    future: getSingleDocument(),
+                    builder: (BuildContext context, AsyncSnapshot<void> snapshot) {
+                      if (snapshot.connectionState == ConnectionState.done) {
+                        // Image has been fetched, build the UI
+                        return CircleAvatar(
+                          radius: 30,
+                          backgroundColor: Colors.transparent,
+                          backgroundImage: NetworkImage(image),
+                        );
+                      } else {
+                        // Image is still loading, display a loading indicator or placeholder
+                        return CircularProgressIndicator(); // You can replace this with your own loading widget
+                      }
+                    },
                   )
 
                 ),
@@ -221,10 +232,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       //itemDashboard('Analytics', CupertinoIcons.graph_circle, Colors.green),
                       //itemDashboard('Audience', CupertinoIcons.person_2, Colors.purple),
                       //itemDashboard('Comments', CupertinoIcons.chat_bubble_2, Colors.brown),
-                      itemDashboard('Amount to pay', CupertinoIcons.money_dollar_circle, Colors.indigo),
-                      itemDashboard(' Distance Travelled', route, Colors.teal),
-                      itemDashboard('About', CupertinoIcons.question_circle, Colors.blue),
-                      itemDashboard('Contact', CupertinoIcons.phone, Colors.pinkAccent),
+                      itemDashboard((){},'Amount to pay', CupertinoIcons.money_dollar_circle, Colors.indigo),
+                      itemDashboard((){Navigator.pushNamed(context,'/current');},'Current Trip', route, Colors.teal),
+                      itemDashboard((){},'About', CupertinoIcons.question_circle, Colors.blue),
+                      itemDashboard((){},'Contact', CupertinoIcons.phone, Colors.pinkAccent),
                     ],
                   ),
                 ],
@@ -238,11 +249,10 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  itemDashboard(String title, IconData iconData, Color background) =>
+  itemDashboard(Function? function(),String title, IconData iconData, Color background) =>
       GestureDetector(
-        onTap: (){
-
-        },
+        onTap:
+          function,
         child: Container(
           decoration: BoxDecoration(
               color: Colors.white70,
