@@ -1,4 +1,6 @@
+import 'package:basics_firebase/piechart.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:basics_firebase/core/controller/login_sign_up_controller.dart';
@@ -116,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTile(
               selectedColor: Color(0xFF7A82B0),
               onTap: (){
-                Navigator.pushNamed(context, "/currenttrip");
+                Navigator.pushNamed(context, "/current");
               },
               leading: Icon(Icons.directions_bus),
               title: Text("Current Trip"),
@@ -226,6 +228,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       height:65,
                       width:double.infinity),
                   graph(),
+                  SizedBox(
+                      height:65,
+                      width:double.infinity),
+                  Piechart(),
                   GridView.count(
                     shrinkWrap: true,
                     padding: EdgeInsets.fromLTRB(0,30,0,0),
@@ -238,7 +244,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       //itemDashboard('Analytics', CupertinoIcons.graph_circle, Colors.green),
                       //itemDashboard('Audience', CupertinoIcons.person_2, Colors.purple),
                       //itemDashboard('Comments', CupertinoIcons.chat_bubble_2, Colors.brown),
-                      itemDashboard((){},'Amount to pay', CupertinoIcons.money_dollar_circle, Colors.indigo),
+                      itemDashboard((){},'Cash conserved', CupertinoIcons.money_dollar_circle, Colors.indigo),
     itemDashboard(() {
     Navigator.pushNamed(context, '/current', arguments: {'image': image});
     }, 'Current Trip', route, Colors.teal),
@@ -324,7 +330,8 @@ class _graphState extends State<graph> {
       child: SizedBox(
         height:200,
         child:MyBarGraph(
-            weeklysummary:weeklysummary),
+            weeklysummary:weeklysummary
+        ),
       ),
     );
   }
