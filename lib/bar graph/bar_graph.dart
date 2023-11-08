@@ -33,21 +33,25 @@ class MyBarGraph extends StatelessWidget {
         ),
       ],
     )).toList();
-    return BarChart(
-        BarChartData(
-            maxY:100,
-            minY:0,
-          gridData: FlGridData(show:false),
-          borderData: FlBorderData(show:false),
-          titlesData: FlTitlesData(
-            show:true,
-            topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-              leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-              rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-            bottomTitles: AxisTitles(sideTitles: bottomTitles )
-            ),
-          barGroups: barChartGroupDataList,
-        )
+    return Container(
+      height: 200,
+      width: 300,
+      child: BarChart(
+          BarChartData(
+              maxY:100,
+              minY:0,
+            gridData: FlGridData(show:false),
+            borderData: FlBorderData(show:false),
+            titlesData: FlTitlesData(
+              show:true,
+              topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+              bottomTitles: AxisTitles(sideTitles: bottomTitles )
+              ),
+            barGroups: barChartGroupDataList,
+          )
+      ),
     );
   }
 }

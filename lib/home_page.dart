@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       body: _buildBody(),
-      appBar: AppBar(title: Text("U at??"),),
+      appBar: AppBar(title: Text("Find Your Cycle"),),
     );
   }
 
