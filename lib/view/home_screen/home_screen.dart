@@ -162,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: ListView(
-        padding: EdgeInsets.zero,
+        padding: EdgeInsets.all(0),
         children: [
           Container(
             decoration: BoxDecoration(
@@ -217,12 +217,18 @@ class _MyHomePageState extends State<MyHomePage> {
               child:
               Column(
                 children: [
+                  SizedBox(height: 50,),
+                  Text("Your Travel Summary",style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),),
                   SizedBox(
                       height:65,
                       width:double.infinity),
                   graph(),
                   GridView.count(
                     shrinkWrap: true,
+                    padding: EdgeInsets.fromLTRB(0,30,0,0),
                     physics: const NeverScrollableScrollPhysics(),
                     crossAxisCount: 2,
                     crossAxisSpacing: 40,
@@ -233,8 +239,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       //itemDashboard('Audience', CupertinoIcons.person_2, Colors.purple),
                       //itemDashboard('Comments', CupertinoIcons.chat_bubble_2, Colors.brown),
                       itemDashboard((){},'Amount to pay', CupertinoIcons.money_dollar_circle, Colors.indigo),
-                      itemDashboard((){Navigator.pushNamed(context,'/current');},'Current Trip', route, Colors.teal),
-                      itemDashboard((){},'About', CupertinoIcons.question_circle, Colors.blue),
+    itemDashboard(() {
+    Navigator.pushNamed(context, '/current', arguments: {'image': image});
+    }, 'Current Trip', route, Colors.teal),
+
+    itemDashboard((){},'About', CupertinoIcons.question_circle, Colors.blue),
                       itemDashboard((){},'Contact', CupertinoIcons.phone, Colors.pinkAccent),
                     ],
                   ),
@@ -303,10 +312,20 @@ class _graphState extends State<graph> {
   ];
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height:200,
-      child:MyBarGraph(
-          weeklysummary:weeklysummary),
+    return Container(
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: Colors.blue, // Border color
+          width: 2.0,         // Border width
+        ),
+        borderRadius: BorderRadius.circular(12.0),
+      ),
+      padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+      child: SizedBox(
+        height:200,
+        child:MyBarGraph(
+            weeklysummary:weeklysummary),
+      ),
     );
   }
 }
