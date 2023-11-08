@@ -27,6 +27,7 @@ class LoginSignUpService {
 
       final ref = FirebaseStorage.instance.ref(destination).child('file/');
       await ref.putFile(_photo);
+      await user.user!.updateDisplayName(name);
 
       final String newURL = await ref.getDownloadURL();
 
