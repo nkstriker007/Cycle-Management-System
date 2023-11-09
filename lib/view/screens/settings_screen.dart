@@ -119,6 +119,36 @@ class _SettingsScreenState extends State<SettingsScreen> {
     });
   }
 
+  void _showPermissionDeniedDialog(String permissionName) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text('Permission Denied'),
+          content: Text(
+            'Please enable $permissionName permission in your device settings.',
+          ),
+          actions: <Widget>[
+            _buildDialogTextButton('Open Settings', () {
+              openAppSettings();
+              Navigator.of(context).pop();
+            }),
+            _buildDialogTextButton('Cancel', () {
+              Navigator.of(context).pop();
+            }),
+          ],
+        );
+      },
+    );
+  }
+
+  TextButton _buildDialogTextButton(String label, VoidCallback onPressed) {
+    return TextButton(
+      onPressed: onPressed,
+      child: Text(label),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -135,7 +165,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  _requestCameraPermission();
+                  if (_cameraStatus.isDenied) {
+                    _showPermissionDeniedDialog('camera');
+                  } else {
+                    _requestCameraPermission();
+                  }
                 },
                 child: Text("Request Camera Permission"),
               ),
@@ -149,7 +183,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  _requestLocationPermission();
+                  if (_locationStatus.isDenied) {
+                    _showPermissionDeniedDialog('location');
+                  } else {
+                    _requestLocationPermission();
+                  }
                 },
                 child: Text("Request Location Permission"),
               ),
