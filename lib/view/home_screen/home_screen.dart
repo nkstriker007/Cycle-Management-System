@@ -10,6 +10,7 @@ import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:basics_firebase/bar%20graph/bar_graph.dart';
 import '../../core/constant/app_route.dart';
+import 'package:lottie/lottie.dart';
 
 
 
@@ -227,10 +228,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                       height:65,
                       width:double.infinity),
+                  Lottie.asset(
+                      "assets/cycle.json"
+                  ,    height:200),
+                  SizedBox(),
                   graph(),
                   SizedBox(
-                      height:65,
-                      width:double.infinity),
+                    height: 65,
+                    width: double.infinity,
+                  ),
                   Piechart(),
                   GridView.count(
                     shrinkWrap: true,
