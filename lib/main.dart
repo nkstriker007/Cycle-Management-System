@@ -1,4 +1,5 @@
 import 'package:basics_firebase/core/constant/app_route.dart';
+import 'package:basics_firebase/sos.dart';
 import 'package:basics_firebase/view/home_screen/home_screen.dart';
 import 'package:basics_firebase/view/login_signup/login/login.dart';
 import 'package:basics_firebase/view/login_signup/signup/signup.dart';
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.splashScreen: (context) => const SplashScreen(),
         '/settings':(context)=> SettingsScreen(),
         '/current':(context)=> HomePage(),
+        '/sos':(context)=> Home(),
       },
       initialRoute: AppRoutes.splashScreen,
     );
