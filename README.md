@@ -1,16 +1,22 @@
-# basics_firebase
+### Cycle Management System
+This is a cycle management system built using Google Maps API, Firebase, and Flutter. The system helps users manage their cycling activities, find cycling routes, participate in contests, and more.
 
-A new Flutter project.
+## Features
+Google Maps Integration: View cycling routes, track your location, and navigate easily using Google Maps. <br/>
+Firebase Backend: Utilize Firebase for user authentication, real-time data syncing, and backend services. <br/>
+SOS Feature: Stay safe during your cycling trips with the SOS feature, which allows you to quickly send alerts to emergency contacts. <br/>
+Contests: Participate in cycling contests, track your progress, and compete with others. <br/>
+Additional Features: Include any other unique features of your cycle management system. <br/>
+## Installation
+To run the app locally, follow these steps:
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clone this repository. <br/>
+Navigate to the project directory. <br/>
+### Run flutter pub get to install dependencies.
+### Update Firebase configuration in google-services.json (Android) and GoogleService-Info.plist (iOS).
+### Run the app using flutter run.
+## Usage
+User Registration/Login: Users can register and log in to the app using their email or social media accounts. <br/>
+Finding Cycling Routes: Use the app to find cycling routes based on your location and preferences. <br/>
+Contest Participation: Participate in contests, track your progress, and view leaderboard rankings. <br/>
+SOS Feature: In case of emergency, use the SOS feature to alert emergency contacts. <br/>
