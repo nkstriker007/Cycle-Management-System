@@ -20,3 +20,7 @@ User Registration/Login: Users can register and log in to the app using their em
 Finding Cycling Routes: Use the app to find cycling routes based on your location and preferences. <br/>
 Contest Participation: Participate in contests, track your progress, and view leaderboard rankings. <br/>
 SOS Feature: In case of emergency, use the SOS feature to alert emergency contacts. <br/>
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
