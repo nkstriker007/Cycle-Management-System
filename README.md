@@ -6,8 +6,7 @@
 
 # Cycle Management System
 <img width="346" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/9d6fd5db-a189-4342-8f21-74b0350a8e6b">
-<br>
-<img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/cd43feba-2d83-43a6-81c0-683ce986b2f6">
+
 
 
 
@@ -23,6 +22,8 @@
 ## Reason for Starting the Project
 
 I had a cycle that got lost many times even though it was locked. To prevent this and to monitor my cycle's location, I decided to create the Cycle Management System.
+<br>
+<img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/cd43feba-2d83-43a6-81c0-683ce986b2f6">
 
 ## Uses of the App
 
