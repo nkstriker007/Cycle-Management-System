@@ -1,4 +1,7 @@
-# Cycle Management System
+<h1>Cycle Management System</h1> 
+
+<h3>Reason and kick start for this project:</h3>
+
 This is a cycle management system built using Google Maps API, Firebase, and Flutter. The system helps users manage their cycling activities, find cycling routes, participate in contests, and more.
 
 ## Features
