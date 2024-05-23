@@ -98,7 +98,7 @@ To run the app locally, follow these steps:
     ```sh
     flutter run
     ```
-
+##special thanks to my team mates Sai Krishnan, Narayan Krishnan
 This will start the application, and you can now use the Cycle Management System to monitor and manage your cycling activities.
 
 ## License
