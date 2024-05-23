@@ -94,7 +94,7 @@ To run the app locally, follow these steps:
 
 4. **Update Firebase configuration**:
     - For Android: Update `google-services.json`.
-    - For iOS: Update `GoogleService-Info.plist`.
+    - For iOS: Update `GoogleService-Info.plist and other required runner files`.
 
 5. **Run the app**.
     ```sh
