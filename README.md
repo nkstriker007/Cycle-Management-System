@@ -28,8 +28,7 @@ I had a cycle that got lost many times even though it was locked. To prevent thi
   
 - **SOS Feature**: 
   - Stay safe during your cycling trips with the SOS feature, which allows you to quickly send alerts to emergency contacts. 
-  - This is mainly useful for people who are riding cycles in mountainous areas and rough terrains for their safety.
-    ![image](https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/f5790609-2907-4930-ab5d-7d75dde97d50)
+  - This is mainly useful for people who are riding cycles in mountainous areas and rough terrains for their safety.    ![image](https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/f5790609-2907-4930-ab5d-7d75dde97d50)
 
   
 - **Parental Monitoring**: 
