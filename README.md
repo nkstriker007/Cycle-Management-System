@@ -14,9 +14,9 @@
 
 <p align="center">
  <img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/053661a4-7f9c-48bd-96cd-b85a90a15e22">
- <br>
+&nbsp;
   <img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/b7a28016-8d2f-4ce4-9989-b4b83c897615">
- <br>
+&nbsp;
  <img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/f5b676c3-69d8-4e36-a928-40d133120f82">
 
 </p>
