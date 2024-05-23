@@ -28,9 +28,7 @@ Finding Cycling Routes: Use the app to find cycling routes based on your locatio
 Contest Participation: Participate in contests, track your progress, and view leaderboard rankings. <br/>
 SOS Feature: In case of emergency, use the SOS feature to alert emergency contacts. <br/>
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 
 
@@ -99,3 +97,7 @@ To run the app locally, follow these steps:
     ```
 
 This will start the application, and you can now use the Cycle Management System to monitor and manage your cycling activities.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
