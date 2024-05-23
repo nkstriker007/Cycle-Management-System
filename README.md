@@ -51,18 +51,23 @@ I had a cycle that got lost many times even though it was locked. To prevent thi
 
 ## Uses of the App
 
-- **View Cycling Routes**: Track your location and navigate easily using Google Maps.
-- **SOS Feature**: Stay safe during your cycling trips with the SOS feature, which allows you to quickly send alerts to emergency contacts. This is mainly useful for people who are riding cycles in mountainous areas and rough terrains for their safety.
-- **Parental Monitoring**: Parents can monitor their children and know where they are for safety purposes.
-- **Participate in Cycling Contests**: Track your progress, compete with others, and view leaderboard rankings.
-- **Unique Features**: Include any other unique features of your cycle management system, such as custom route planning or group ride coordination.
+- **View Cycling Routes**: 
+  - Track your location and navigate easily using Google Maps.
+  
+- **SOS Feature**: 
+  - Stay safe during your cycling trips with the SOS feature, which allows you to quickly send alerts to emergency contacts. 
+  - This is mainly useful for people who are riding cycles in mountainous areas and rough terrains for their safety.
+  
+- **Parental Monitoring**: 
+  - Parents can monitor their children and know where they are for safety purposes.
+  
+- **Participate in Cycling Contests**: 
+  - Track your progress, compete with others, and view leaderboard rankings.
+  
+- **Unique Features**: 
+  - Include any other unique features of your cycle management system, such as custom route planning or group ride coordination.
 
-## Usage
 
-- **User Registration/Login**: Users can register and log in to the app using their email or social media accounts.
-- **Finding Cycling Routes**: Use the app to find cycling routes based on your location and preferences.
-- **Contest Participation**: Participate in contests, track your progress, and view leaderboard rankings.
-- **SOS Feature**: In case of emergency, use the SOS feature to alert emergency contacts.
 
 ## Future Development Scope
 
