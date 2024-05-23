@@ -32,3 +32,73 @@ SOS Feature: In case of emergency, use the SOS feature to alert emergency contac
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
+
+
+
+
+
+
+
+# Cycle Management System
+
+## Used Tech Stacks
+
+- **Flutter**  
+  ![Flutter](https://flutter.dev/assets/images/shared/brand/flutter/logo/flutter-lockup.png)
+- **Firebase**  
+  ![Firebase](https://firebase.google.com/downloads/brand-guidelines/PNG/logo-standard.png)
+- **Google Maps API**  
+  ![Google Maps API](https://developers.google.com/maps/images/maps-icon.svg)
+
+## Reason for Starting the Project
+
+I had a cycle that got lost many times even though it was locked. To prevent this and to monitor my cycle's location, I decided to create the Cycle Management System.
+
+## Uses of the App
+
+- **View Cycling Routes**: Track your location and navigate easily using Google Maps.
+- **SOS Feature**: Stay safe during your cycling trips with the SOS feature, which allows you to quickly send alerts to emergency contacts. This is mainly useful for people who are riding cycles in mountainous areas and rough terrains for their safety.
+- **Parental Monitoring**: Parents can monitor their children and know where they are for safety purposes.
+- **Participate in Cycling Contests**: Track your progress, compete with others, and view leaderboard rankings.
+- **Unique Features**: Include any other unique features of your cycle management system, such as custom route planning or group ride coordination.
+
+## Usage
+
+- **User Registration/Login**: Users can register and log in to the app using their email or social media accounts.
+- **Finding Cycling Routes**: Use the app to find cycling routes based on your location and preferences.
+- **Contest Participation**: Participate in contests, track your progress, and view leaderboard rankings.
+- **SOS Feature**: In case of emergency, use the SOS feature to alert emergency contacts.
+
+## Future Development Scope
+
+- **Automatic Lock Systems**: Similar to car locks, if the user moves away to a certain distance, the cycle automatically locks. This feature uses the location data from the mobile phone and is optional for the user.
+
+## Installation Process and Using It
+
+To run the app locally, follow these steps:
+
+1. **Clone this repository**.
+    ```sh
+    git clone <repository-url>
+    ```
+
+2. **Navigate to the project directory**.
+    ```sh
+    cd cycle-management-system
+    ```
+
+3. **Install dependencies**.
+    ```sh
+    flutter pub get
+    ```
+
+4. **Update Firebase configuration**:
+    - For Android: Update `google-services.json`.
+    - For iOS: Update `GoogleService-Info.plist`.
+
+5. **Run the app**.
+    ```sh
+    flutter run
+    ```
+
+This will start the application, and you can now use the Cycle Management System to monitor and manage your cycling activities.
