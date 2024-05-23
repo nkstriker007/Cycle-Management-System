@@ -24,7 +24,12 @@
 I had a cycle that got lost many times even though it was locked. To prevent this and to monitor my cycle's location, I decided to create the Cycle Management System.
 
 <br>
-<img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/cd43feba-2d83-43a6-81c0-683ce986b2f6">
+<p align="center">
+   <img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/cd43feba-2d83-43a6-81c0-683ce986b2f6">
+   <img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/929bc7c7-b588-4dd1-9a84-1c0d734d78dc" >
+    <img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/5a5381d9-c732-467d-913b-5d58a39dae10">
+
+</p>
 
 ## Uses of the App
 
