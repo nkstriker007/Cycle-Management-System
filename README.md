@@ -1,6 +1,7 @@
 <h1>Cycle Management System</h1> 
 
 <h2>Tech stack used</h2>
+<img width="369" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/61c42699-bf36-463d-bd11-60a0d56fe7fe">
 
 
 <h3>Reason and kick start for this project:</h3>
