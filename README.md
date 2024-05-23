@@ -37,7 +37,10 @@ I had a cycle that got lost many times even though it was locked. To prevent thi
   
 - **Participate in Cycling Contests**: 
   - Track your progress, compete with others, and view leaderboard rankings.
-  
+    <br>
+  -  <img width="300" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/5ef633a0-6e51-46f9-b9cd-cc6281f192c5">
+
+
 - **Unique Features**: 
   - Include any other unique features of your cycle management system, such as custom route planning or group ride coordination.
 
