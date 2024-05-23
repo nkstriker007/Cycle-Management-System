@@ -36,17 +36,15 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 
 
-
 # Cycle Management System
 
 ## Used Tech Stacks
 
-- **Flutter**  
+<p align="center">
   <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" alt="Flutter" width="100">
-- **Firebase**  
   <img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-standard.png" alt="Firebase" width="100">
-- **Google Maps API**  
   <img src="https://developers.google.com/maps/images/maps-icon.svg" alt="Google Maps API" width="100">
+</p>
 
 ## Reason for Starting the Project
 
