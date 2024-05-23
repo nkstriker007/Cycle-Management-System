@@ -24,3 +24,4 @@ SOS Feature: In case of emergency, use the SOS feature to alert emergency contac
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
