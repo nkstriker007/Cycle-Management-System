@@ -99,10 +99,10 @@ To run the app locally, follow these steps:
     flutter run
     ```
     
-<h3>Special thanks to my team mates Sai Krishnan, Narayan Krishnan</h3>
+
 
 This will start the application, and you can now use the Cycle Management System to monitor and manage your cycling activities.
 
 ## License
-
+<h3>Special thanks to my team mates Sai Krishnan, Narayan Krishnan</h3>
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
