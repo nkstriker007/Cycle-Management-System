@@ -6,6 +6,9 @@
 
 # Cycle Management System
 <img width="346" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/9d6fd5db-a189-4342-8f21-74b0350a8e6b">
+<br>
+![image](https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/8e9560f7-bb5c-43ef-be63-a5181be2f8ac)
+
 
 
 ## Used Tech Stacks
