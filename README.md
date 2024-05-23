@@ -99,7 +99,7 @@ To run the app locally, follow these steps:
     flutter run
     ```
     
-<h3 style="color:Tomato;">special thanks to my team mates Sai Krishnan, Narayan Krishnan</h3>
+<h3><span style="color:blue">special thanks to my team mates Sai Krishnan, Narayan Krishnan</span></h3>
 
 This will start the application, and you can now use the Cycle Management System to monitor and manage your cycling activities.
 
