@@ -12,7 +12,9 @@
 
 
 ## Used Tech Stacks
-
+Frontend: Flutter (Dart)
+Backend: Firebase (Firestore, Authentication, Realtime Database, Cloud Functions)
+Geolocation Services: Google Maps API
 <p align="center">
  <img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/053661a4-7f9c-48bd-96cd-b85a90a15e22">
 &nbsp;
@@ -21,10 +23,6 @@
  <img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/f5b676c3-69d8-4e36-a928-40d133120f82">
 
 </p>
-
-## Reason for Starting the Project
-
-I had a cycle that got lost many times even though it was locked. To prevent this and to monitor my cycle's location, I decided to create the Cycle Management System.
 
 <br>
 <p align="center">
@@ -43,11 +41,11 @@ I had a cycle that got lost many times even though it was locked. To prevent thi
 
 ## Uses of the App
 
-- **View Cycling Routes**: 
-  - Track your location and navigate easily using Google Maps.
+- **Explore Cycling Paths**: 
+  - View routes on an interactive Google Maps interface with turn-by-turn navigation.
   
 - **SOS Feature**: 
-  - Stay safe during your cycling trips with the SOS feature, which allows you to quickly send alerts to emergency contacts. 
+  - Emergency button to alert selected contacts with your current location
   - This is mainly useful for people who are riding cycles in mountainous areas and rough terrains for their safety.
   <br>
   -  <img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/f5790609-2907-4930-ab5d-7d75dde97d50">
@@ -56,7 +54,7 @@ I had a cycle that got lost many times even though it was locked. To prevent thi
   - Parents can monitor their children and know where they are for safety purposes.
   
 - **Participate in Cycling Contests**: 
-  - Track your progress, compete with others, and view leaderboard rankings.
+  - Track progress, compete with others, and earn points based on performance.
     <br>
   -  <img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/5ef633a0-6e51-46f9-b9cd-cc6281f192c5">
 
