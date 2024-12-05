@@ -13,8 +13,16 @@
 
 ## Used Tech Stacks
 Frontend: Flutter (Dart)
-Backend: Firebase (Firestore, Authentication, Realtime Database, Cloud Functions)
-Geolocation Services: Google Maps API
+
+Backend: Firebase (Firestore, Authentication, Realtime Database, Cloud Functions).
+
+Geolocation Services: Google Maps API.
+
+## Used Hardware 
+ESP32 
+
+GPRS-GSM Module
+
 <p align="center">
  <img width="200" alt="image" src="https://github.com/saikrishy3808u3qr3pur3q/Cycle-Management-Sysytem/assets/114069009/053661a4-7f9c-48bd-96cd-b85a90a15e22">
 &nbsp;
